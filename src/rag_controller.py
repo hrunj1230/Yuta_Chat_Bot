@@ -83,7 +83,7 @@ def build_llm():
     #         base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"),
     #     )
     return ChatGoogleGenerativeAI(
-        model=os.getenv("GOOGLE_MODEL", "gemini-2.5-flash"),
+        model=os.getenv("GOOGLE_MODEL", "gemini-2.5-flash-lite"),
         google_api_key=os.getenv("GOOGLE_API_KEY"),
     )
 

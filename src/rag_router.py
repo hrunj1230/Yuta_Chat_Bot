@@ -12,7 +12,7 @@ class QueryResponse(BaseModel):
     answer: str
 
 @router.post("")
-def aa(payload: QuestionRequest):
+def ask_question(payload: QuestionRequest):
     try:
         answer = rag_controller.ask_question(payload.question)
     except ValueError as exc:
