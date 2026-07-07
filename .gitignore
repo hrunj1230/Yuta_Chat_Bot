@@ -1,0 +1,6 @@
+.env
+
+uv.lock
+.venv
+__pycache__/
+.memsearch/
